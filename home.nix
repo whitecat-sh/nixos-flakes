@@ -9,6 +9,7 @@
     hypridle
     hyprlock 
     hyprpaper
+    hyprshot
     htop
     kitty
     neovim
