@@ -27,7 +27,6 @@
     mpv
     tor-browser-bundle-bin
     spotify
-    discord
     pavucontrol
     alsa-utils
     virt-viewer
