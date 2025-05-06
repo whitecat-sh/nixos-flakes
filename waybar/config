@@ -2,9 +2,17 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["wireplumber", "battery", "custom/power", "clock"],
+    "modules-right": ["wireplumber", "battery", "custom/power", "network", "clock"],
     "hyprland/window": {
         "max-length": 50
+    },
+    "network": {
+	"format": "{ifname}",
+	"format-wifi": "{essid} ({signalStrength}%)",
+	"tooltip-format-wifi": "{ipaddr}/{cidr}",
+	"format-ethernet": "{ipaddr}/{cidr}",
+	"tooltip-format-ethernet": "{ifname}",
+	"format-disconnected": "",
     },
     "custom/power": {
 	"exec": "sh ~/.config/waybar/power.sh",

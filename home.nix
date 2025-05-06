@@ -34,6 +34,7 @@
     nautilus
     p7zip
     gnome-themes-extra
+    networkmanagerapplet
   ];
 
   # Oh my Zsh
