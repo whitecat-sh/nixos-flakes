@@ -39,6 +39,7 @@
     networkmanagerapplet
     neofetch
     obs-studio
+    nwg-look
   ];
 
   # Oh my Zsh
@@ -70,8 +71,9 @@
   
   # Configuration files
   home.file = {
-    ".config/waybar/".source = ./waybar; 
-    ".config/hypr/".source = ./hypr;
+    "~/.config/waybar/".source = ./waybar; 
+    "~/.config/hypr/".source = ./hypr;
+    "~/.local/share/icons/".source = ./icons;
   };
   
   # This value determines the Home Manager release that your
