@@ -22,6 +22,12 @@
   networking.hostName = "laptop"; # Define your hostname.
   # ntfs support
   boot.supportedFilesystems = [ "ntfs" ];
+
+  # OBS Virtual Camera support
+  boot.extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback ];
+  boot.kernelModules = [
+    "v4l2loopback"
+  ];
   
   # Latest Kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -74,6 +80,7 @@
       description = "Charles Mclean";
       extraGroups = [
         "wheel"
+	"networkmanager"
       ]; 
       shell = pkgs.zsh;
   };
@@ -93,7 +100,11 @@
     pkgs.asusctl
     pkgs.sof-firmware
     pkgs.wireplumber
+    pkgs.gparted
   ];
+  
+  # steam
+  programs.steam.enable = true;
   
   services.asusd = {
     enable = true;

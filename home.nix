@@ -4,6 +4,7 @@
 {
   home.packages = with pkgs; [
     git
+    mesa
     home-manager
     hyprland
     hypridle
@@ -18,6 +19,7 @@
     vscodium    
     firefox
     chromium
+    gnome-calculator
     brightnessctl
     wofi
     tree
@@ -35,6 +37,8 @@
     p7zip
     gnome-themes-extra
     networkmanagerapplet
+    neofetch
+    obs-studio
   ];
 
   # Oh my Zsh
