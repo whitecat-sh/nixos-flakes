@@ -17,6 +17,7 @@
     waybar
     veracrypt
     vscodium    
+    mullvad-vpn
     firefox
     chromium
     gnome-calculator
@@ -24,7 +25,6 @@
     wofi
     tree
     remmina
-    mullvad-vpn
     libreoffice-still
     gimp
     mpv
