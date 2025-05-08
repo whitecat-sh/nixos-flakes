@@ -10,8 +10,8 @@
 	"format": "{ifname}",
 	"format-wifi": "{essid} ({signalStrength}%)",
 	"tooltip-format-wifi": "{ipaddr}/{cidr}",
-	"format-ethernet": "{ipaddr}/{cidr}",
-	"tooltip-format-ethernet": "{ifname}",
+	"format-ethernet": "{ifname}",
+	"tooltip-format-ethernet": "{ipaddr}/{cidr}",
 	"format-disconnected": "",
     },
     "custom/power": {

@@ -43,6 +43,7 @@
     vesktop
     nmap
     wireshark
+    kdePackages.kdenlive
   ];
 
   # Oh my Zsh

@@ -87,6 +87,7 @@
       extraGroups = [
         "wheel"
 	"networkmanager"
+        "docker"
       ]; 
       shell = pkgs.zsh;
   };
@@ -111,7 +112,8 @@
   
   # steam
   programs.steam.enable = true;
-  
+
+  # asusd  
   services.asusd = {
     enable = true;
     enableUserService = true;
@@ -120,6 +122,14 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   
+  # Docker
+  virtualisation.docker.enable = true;
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
+
+
   # Hyperland custom
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
