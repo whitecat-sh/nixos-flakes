@@ -40,6 +40,9 @@
     neofetch
     obs-studio
     nwg-look
+    vesktop
+    nmap
+    wireshark
   ];
 
   # Oh my Zsh
@@ -71,9 +74,16 @@
   
   # Configuration files
   home.file = {
-    "~/.config/waybar/".source = ./waybar; 
-    "~/.config/hypr/".source = ./hypr;
-    "~/.local/share/icons/".source = ./icons;
+    ".config/waybar/".source = ./waybar; 
+    ".config/hypr/".source = ./hypr;
+  };
+
+  home.pointerCursor = {
+    gtk.enable = true;
+    x11.enable = true;
+    package = pkgs.numix-cursor-theme;
+    name = "Numix-Cursor-Light";
+    size = 24;
   };
   
   # This value determines the Home Manager release that your
