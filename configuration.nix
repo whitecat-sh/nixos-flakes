@@ -35,6 +35,8 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Wireguard
+  networking.wg-quick.interfaces.wg0.configFile = "/home/charles/windows-home.conf";
   # Enable Bluetooth
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
@@ -131,8 +133,6 @@
 
 
   # Hyperland custom
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
   programs.hyprland.enable = true;
   
   # Mullvad
