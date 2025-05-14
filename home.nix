@@ -7,6 +7,7 @@
     mesa
     home-manager
     hyprland
+    nwg-displays
     hypridle
     hyprlock 
     hyprpaper
@@ -34,16 +35,17 @@
     alsa-utils
     virt-viewer
     nautilus
-    p7zip
     gnome-themes-extra
     networkmanagerapplet
     neofetch
     obs-studio
     nwg-look
-    vesktop
     nmap
     wireshark
     kdePackages.kdenlive
+    #ciscoPacketTracer8
+    go
+    hugo
   ];
 
   # Oh my Zsh
@@ -74,10 +76,10 @@
   home.homeDirectory = "/home/charles";
   
   # Configuration files
-  home.file = {
-    ".config/waybar/".source = ./waybar; 
-    ".config/hypr/".source = ./hypr;
-  };
+  # home.file = {
+  #  ".config/waybar/".source = ./waybar; 
+  #  ".config/hypr/".source = ./hypr;
+  #};
 
   home.pointerCursor = {
     gtk.enable = true;

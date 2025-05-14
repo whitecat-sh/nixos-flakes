@@ -120,7 +120,9 @@
     enable = true;
     enableUserService = true;
   };
-  
+
+  # Fingerprint
+  services.fprintd.enable = true;  
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   
