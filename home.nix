@@ -5,6 +5,7 @@
   home.packages = with pkgs; [
     git
     mesa
+    lm_sensors
     home-manager
     hyprland
     nwg-displays
@@ -46,6 +47,7 @@
     #ciscoPacketTracer8
     go
     hugo
+    moonlight-qt
   ];
 
   # Oh my Zsh
