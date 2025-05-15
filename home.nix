@@ -13,6 +13,7 @@
     hyprlock 
     hyprpaper
     hyprshot
+    hyprcursor
     htop
     kitty
     neovim
@@ -48,6 +49,7 @@
     go
     hugo
     moonlight-qt
+    numix-cursor-theme
   ];
 
   # Oh my Zsh
@@ -83,13 +85,12 @@
   #  ".config/hypr/".source = ./hypr;
   #};
 
-  home.pointerCursor = {
-    gtk.enable = true;
-    x11.enable = true;
-    package = pkgs.numix-cursor-theme;
-    name = "Numix-Cursor-Light";
-    size = 24;
-  };
+  #home.pointerCursor = {
+  #  gtk.enable = true;
+  #  x11.enable = true;
+  #  package = pkgs.numix-cursor-theme;
+  #  name = "Numix-Cursor-Light";
+  #};
   
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage

@@ -41,7 +41,11 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
   services.blueman.enable = true;
-
+  
+  # Flipper zero
+  hardware.flipperzero.enable = true;
+  # Hack Rf
+  hardware.hackrf.enable = true;  
   # Set your time zone.
   time.timeZone = "America/New_York";
   # Fonts
