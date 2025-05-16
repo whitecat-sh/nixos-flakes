@@ -85,12 +85,12 @@
   #  ".config/hypr/".source = ./hypr;
   #};
 
-  #home.pointerCursor = {
+  home.pointerCursor = {
   #  gtk.enable = true;
-  #  x11.enable = true;
-  #  package = pkgs.numix-cursor-theme;
-  #  name = "Numix-Cursor-Light";
-  #};
+    x11.enable = true;
+    package = pkgs.numix-cursor-theme;
+    name = "Numix-Cursor-Light";
+  };
   
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
