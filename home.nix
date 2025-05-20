@@ -50,6 +50,7 @@
     hugo
     moonlight-qt
     numix-cursor-theme
+    google-chrome
   ];
 
   # Oh my Zsh

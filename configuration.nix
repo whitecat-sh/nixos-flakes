@@ -36,7 +36,7 @@
   networking.networkmanager.enable = true;
 
   # Wireguard
-  networking.wg-quick.interfaces.wg0.configFile = "/home/charles/windows-home.conf";
+  # networking.wg-quick.interfaces.wg0.configFile = "/home/charles/windows-home.conf";
   # Enable Bluetooth
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
@@ -118,7 +118,10 @@
   
   # steam
   programs.steam.enable = true;
-
+  
+  # flatpack
+  services.flatpak.enable = true;
+  
   # asusd  
   services.asusd = {
     enable = true;
