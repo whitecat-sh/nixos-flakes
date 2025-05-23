@@ -46,6 +46,9 @@
   hardware.flipperzero.enable = true;
   # Hack Rf
   hardware.hackrf.enable = true;  
+  # Logitech
+  hardware.logitech.enable = true;
+  
   # Set your time zone.
   time.timeZone = "America/New_York";
   # Fonts
