@@ -16,6 +16,7 @@
     hyprcursor
     htop
     kitty
+    foot
     neovim
     waybar
     veracrypt
@@ -27,7 +28,7 @@
     brightnessctl
     wofi
     tree
-    remmina
+    freerdp
     libreoffice-still
     gimp
     mpv
@@ -51,7 +52,12 @@
     moonlight-qt
     numix-cursor-theme
     google-chrome
+    qownnotes
+    kdePackages.kleopatra
   ];
+
+
+
 
   # Oh my Zsh
   programs.zsh = {

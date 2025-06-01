@@ -24,10 +24,10 @@
   boot.supportedFilesystems = [ "ntfs" ];
 
   # OBS Virtual Camera support
-  boot.extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback ];
-  boot.kernelModules = [
-    "v4l2loopback"
-  ];
+  #boot.extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback ];
+  #boot.kernelModules = [
+  #  "v4l2loopback"
+  #];
   
   # Latest Kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -36,7 +36,7 @@
   networking.networkmanager.enable = true;
 
   # Wireguard
-  # networking.wg-quick.interfaces.wg0.configFile = "/home/charles/windows-home.conf";
+  #networking.wg-quick.interfaces.wg0.configFile = "/home/charles/windows-home.conf";
   # Enable Bluetooth
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
@@ -47,8 +47,9 @@
   # Hack Rf
   hardware.hackrf.enable = true;  
   # Logitech
-  hardware.logitech.enable = true;
-  
+  #hardware.logitech.enable = true;
+  hardware.logitech.wireless.enable = true;
+
   # Set your time zone.
   time.timeZone = "America/New_York";
   # Fonts
@@ -119,6 +120,9 @@
     pkgs.gparted
   ];
   
+  #GPG
+  programs.gnupg.agent.enable = true;
+
   # steam
   programs.steam.enable = true;
   
