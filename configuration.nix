@@ -34,7 +34,7 @@
   
   # Enable networking
   networking.networkmanager.enable = true;
-
+  services.libreswan.enable = true;
   # Wireguard
   #networking.wg-quick.interfaces.wg0.configFile = "/home/charles/windows-home.conf";
   # Enable Bluetooth
@@ -49,7 +49,15 @@
   # Logitech
   #hardware.logitech.enable = true;
   hardware.logitech.wireless.enable = true;
-
+  # Tor
+  #services.tor.enable = true;
+  #services.tor.torsocks.enable = true;
+  #services.tor.client.enable = true;
+  #services.tor.settings = {
+  #    UseBridges = true;
+  #    ClientTransportPlugin = "obfs4 exec ${pkgs.obfs4}/bin/lyrebird";
+  #    Bridge = builtins.readFile (toString ./bridges.txt);
+  #};
   # Set your time zone.
   time.timeZone = "America/New_York";
   # Fonts
@@ -153,7 +161,6 @@
   
   # Mullvad
   services.mullvad-vpn.enable = true;
-  
   # VMware commented out in original
   #virtualisation.vmware.host.enable = true;
   #virtualisation.vmware.host.package = (pkgs.vmware-workstation.overrideAttrs rec { 

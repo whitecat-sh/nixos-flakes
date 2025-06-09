@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["wireplumber", "battery", "custom/power", "network", "clock"],
+    "modules-right": ["wireplumber", "battery", "custom/power", "network", "clock", "custom/vpn"],
     "hyprland/window": {
         "max-length": 50
     },
@@ -27,5 +27,10 @@
     },
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+    "custom/vpn": {
+        "exec": "sh ~/.config/waybar/vpn.sh",
+        "interval": 5,
+        "tooltip": false
     }
 }

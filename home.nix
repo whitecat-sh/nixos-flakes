@@ -21,7 +21,6 @@
     waybar
     veracrypt
     vscodium    
-    mullvad-vpn
     firefox
     chromium
     gnome-calculator
@@ -33,6 +32,7 @@
     gimp
     mpv
     tor-browser-bundle-bin
+    torsocks
     spotify
     pavucontrol
     alsa-utils
@@ -54,6 +54,7 @@
     google-chrome
     qownnotes
     kdePackages.kleopatra
+    gnome-disk-utility
   ];
 
 
