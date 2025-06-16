@@ -14,11 +14,8 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.initrd.luks.devices."cryptroot" = {
-    device = "/dev/disk/by-uuid/b6888c7a-7e9b-4f38-a394-798cba965c9c";
-    preLVM = true;
-    allowDiscards = true;  # Enable TRIM support for SSDs
-  };
+  boot.initrd.luks.devices."luks-00df0bec-f854-4c4c-939f-cc5ff37a0c45".device = "/dev/disk/by-uuid/00df0bec-f854-4c4c-939f-cc5ff37a0c45";
+
   networking.hostName = "laptop"; # Define your hostname.
   # ntfs support
   boot.supportedFilesystems = [ "ntfs" ];
@@ -36,7 +33,7 @@
   networking.networkmanager.enable = true;
   services.libreswan.enable = true;
   # Wireguard
-  #networking.wg-quick.interfaces.wg0.configFile = "/home/charles/windows-home.conf";
+  networking.wg-quick.interfaces.wg0.configFile = "/home/charles/laptop-prox.conf";
   # Enable Bluetooth
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;

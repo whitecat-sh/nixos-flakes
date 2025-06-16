@@ -57,9 +57,6 @@
     gnome-disk-utility
   ];
 
-
-
-
   # Oh my Zsh
   programs.zsh = {
     enable = true;
