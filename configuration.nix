@@ -14,7 +14,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.initrd.luks.devices."luks-00df0bec-f854-4c4c-939f-cc5ff37a0c45".device = "/dev/disk/by-uuid/00df0bec-f854-4c4c-939f-cc5ff37a0c45";
+  boot.initrd.luks.devices."luksroot".device = "/dev/disk/by-uuid/00df0bec-f854-4c4c-939f-cc5ff37a0c45";
 
   networking.hostName = "laptop"; # Define your hostname.
   # ntfs support
@@ -31,13 +31,15 @@
   
   # Enable networking
   networking.networkmanager.enable = true;
-  services.libreswan.enable = true;
+  #services.libreswan.enable = true;
   # Wireguard
-  networking.wg-quick.interfaces.wg0.configFile = "/home/charles/laptop-prox.conf";
+  #networking.wg-quick.interfaces.wg0.configFile = "/home/charles/laptop.conf";
   # Enable Bluetooth
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
   services.blueman.enable = true;
+ 
+  #services.netbird.enable = true;
   
   # Flipper zero
   hardware.flipperzero.enable = true;
@@ -141,7 +143,7 @@
   };
 
   # Fingerprint
-  services.fprintd.enable = true;  
+  # services.fprintd.enable = true;  
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   
@@ -158,6 +160,8 @@
   
   # Mullvad
   services.mullvad-vpn.enable = true;
+  services.mullvad-vpn.package = pkgs.mullvad-vpn;
+
   # VMware commented out in original
   #virtualisation.vmware.host.enable = true;
   #virtualisation.vmware.host.package = (pkgs.vmware-workstation.overrideAttrs rec { 

@@ -55,6 +55,8 @@
     qownnotes
     kdePackages.kleopatra
     gnome-disk-utility
+    winbox4
+    qbittorrent
   ];
 
   # Oh my Zsh
@@ -96,6 +98,17 @@
     package = pkgs.numix-cursor-theme;
     name = "Numix-Cursor-Light";
   };
+
+  home.file = {
+  ".config/hypr/".source = ./hypr;
+  ".config/hypr/".recursive = true;
+  ".config/waybar/".source = ./waybar;
+  ".config/waybar/".recursive = true;
+  };
+
+
+
+
   
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
