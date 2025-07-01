@@ -14,8 +14,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.initrd.luks.devices."luksroot".device = "/dev/disk/by-uuid/00df0bec-f854-4c4c-939f-cc5ff37a0c45";
-
   networking.hostName = "laptop"; # Define your hostname.
   # ntfs support
   boot.supportedFilesystems = [ "ntfs" ];
