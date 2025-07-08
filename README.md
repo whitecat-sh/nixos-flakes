@@ -12,9 +12,7 @@
 - Simple and minimalist configuration
 - All of my day-to-day tools
 - Virtual Machine support (Virt-Manager)
+- VPN status waybar with mullvad
 
 ## What has to be done:
 - An installer script
-- Full disk encryption support
-- Finish the waybar
-- Fine tune the config files to avoid hard symlinks (need to figure this out)
