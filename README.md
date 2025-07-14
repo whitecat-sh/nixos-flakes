@@ -3,6 +3,7 @@
 - Hyprland
 - Hyprlock and Hyprpaper
 - Full Wayland and Xwayland support
+- AMDGPU + ROCM support
 - Easy to use display switching (nwg-displays)
 - A custom Waybar config showing volume, battery, power draw, internet interface and date infomation
 - Bluetooth support
