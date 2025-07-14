@@ -36,9 +36,17 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
   services.blueman.enable = true;
- 
-  #services.netbird.enable = true;
+   
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
   
+  hardware.graphics.extraPackages = with pkgs; [ rocmPackages.clr.icd ];
+  
+  systemd.packages = with pkgs; [ lact ];
+  systemd.services.lactd.wantedBy = ["multi-user.target"];
+
   # Flipper zero
   hardware.flipperzero.enable = true;
   # Hack Rf
@@ -123,6 +131,7 @@
     pkgs.sof-firmware
     pkgs.wireplumber
     pkgs.gparted
+    pkgs.lact
   ];
   
   #GPG

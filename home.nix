@@ -58,6 +58,7 @@
     gnome-disk-utility
     winbox4
     qbittorrent
+    hashcat
   ];
 
   # Oh my Zsh
