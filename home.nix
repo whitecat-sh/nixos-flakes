@@ -29,8 +29,6 @@
     tree
     freerdp
     libreoffice-still
-    gimp
-    darktable
     mpv
     tor-browser-bundle-bin
     torsocks
